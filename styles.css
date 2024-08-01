@@ -1,0 +1,180 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #1db954;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.noA a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+}
+
+aside {
+    width: 100%;
+    background-color: #282828;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 15px;
+}
+
+aside ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.featured {
+    margin-bottom: 20px;
+}
+
+.featured .playlist {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.featured .playlist img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.library-item, .liked-song {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.library-item img, .liked-song img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.library-details, .song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #181818;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.track-info {
+    display: flex;
+}
+
+.track-info img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    margin: 0 10px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    aside {
+        width: 250px;
+        height: 100vh;
+    }
+
+    main {
+        margin-left: 250px;
+    }
+}
+@media (max-width: 767px) {
+    .profile {
+        display: none;
+    }
+}
